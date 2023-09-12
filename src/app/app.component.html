@@ -1,0 +1,28 @@
+<h1 *ngIf="token == null">Spotify Stats</h1>
+
+<div *ngIf="token == null" class="login">
+  <a href="{{AUTH_ENDPOINT}}?client_id={{CLIENT_ID}}&redirect_uri={{REDIRECT_URI}}&response_type={{RESPONSE_TYPE}}&scope={{SCOPES}}">Login to Spotify</a>
+</div>
+
+
+<div *ngIf="token != null" class="container">
+  <app-header [uPicture]="userPicture" [uName]="userName" [uFollowers]="userFollowers" [uPlaylists]="userPlaylists"></app-header>
+  <div class="bottom-container">
+    <app-last-song [albumPic]="userCurrentSongPic" [artistName]="userCurrentSongArtist" [songName]="userCurrentSong" [songLink]="userCurrentSongLink"  [prevSong]="userPrevSong" [prevArtist]="userPrevArtist" [prevPic]="userPrevPic" [prevLink]="userPrevLink"></app-last-song>
+  </div>
+  <h2>Most Listened To (All Time)</h2>
+  <div class="tops">
+      <app-tops [topFive]="userTop5" text="Top Artists"></app-tops>
+      <app-tops [topFiveSongs]="userTop5Songs"text="Top Songs"></app-tops>
+  </div>
+  <!-- <h2>Recommended for you</h2>
+  <div class="recommended">
+    <app-recommended [recSongs]="userRecSongs"></app-recommended>
+  </div> -->
+
+  <div class="logout">
+    <button (click)="logout()">Logout</button>
+  </div>
+
+</div>
+

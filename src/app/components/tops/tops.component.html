@@ -1,0 +1,21 @@
+<div class="square">
+    <h2>{{text}}</h2>
+    <!-- {{topFive[0]}} -->
+    <div class="topfive" *ngFor="let top of topFive">
+        <a href="{{top['external_urls']['spotify']}}" target="_blank">
+            <div class="top-container">
+                <img src="{{top['images'][2]['url']}}" alt="artist image">
+                {{top['name']}}
+            </div>
+        </a>
+    </div>
+    <div class="topfive" *ngFor="let top of topFiveSongs">
+        <a href="{{top['external_urls']['spotify']}}" target="_blank">
+            <div class="top-container">
+                <img style="border-radius: 0px;" src="{{top['album']['images'][2]['url']}}" alt="artist image">
+                {{top['artists'][0]['name']}} - {{top['name']}}
+            </div>
+        </a>
+    </div>
+    <!-- array of top songs/artists/genres -->
+</div>

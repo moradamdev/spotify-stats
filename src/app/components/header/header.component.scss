@@ -1,0 +1,26 @@
+.top-container{
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to top right, #e83f6f79, #ffc697);
+    padding: 1em;
+    // border-radius: 50px;
+    // margin-bottom:2em;
+    // border-top: 4px solid #e83f6f79;
+    border-bottom: 4px solid #e83f6f79;
+    // box-shadow: 4px 4px 20px rgba(255, 180, 40, 0.692);
+}
+.name{
+    display: flex;
+    align-items: center;
+    img{
+        box-shadow: 5px 5px 5px rgba(126, 89, 89, 0.452);
+        margin-right: .75em;
+        width:100px;
+        border-radius: 50px;
+    }
+}
+.sub-prof{
+    display: flex;
+    justify-content:  space-between;
+    width:75%;
+    margin:auto;
+}

@@ -1,0 +1,77 @@
+// @import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Comfortaa:wght@300;500;700&family=Fira+Code:wght@300&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap');
+// h1{
+//     font-family: 'Changa One', cursive;
+// font-family: 'Comfortaa', cursive;
+// font-family: 'Fira Code', monospace;
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Poppins', sans-serif;
+// }
+@mixin centerwhite {
+    color:white;
+    text-align: center;
+}
+h1{
+    font-size: 2.5em;
+    margin: 0em;
+    padding:0em;
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.356);
+    text-align: center;
+}
+
+.login{
+    margin: auto;
+    width:50%;
+    background: rgb(57, 180, 94);
+    text-align: center;
+    padding: 1em;
+    border-radius: 20px;
+    a{
+        color:white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 2em;
+    }
+}
+.logout{
+
+    margin:4em;
+    text-align: center;
+    button{
+        background: rgb(57, 180, 94);
+        padding: 1em;
+        border: none;
+        border-radius: 20px;
+        width: 50%;
+        color:white;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+}
+
+.container{
+    h2{
+        @include centerwhite;
+    }
+    // margin:0em;
+    // padding:0em;
+}
+.tops{
+    // display: flex;
+    // justify-content: space-between;
+    // background: rgb(61, 61, 134);
+    text-align: center;
+    display: block;
+    border-radius: 20px;
+    padding: .5em 1em;
+}
+.bottom-container{
+    // background:rgb(105, 105, 173);
+    // color:white;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), #ffffff00);
+    // background:rgba(0, 0, 0, 0.2);
+
+    padding: .3em 1em;
+}

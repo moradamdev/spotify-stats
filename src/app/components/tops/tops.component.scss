@@ -1,0 +1,40 @@
+.square{
+    background:rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding:.5em 1.5em;
+    width: 23em;
+    margin: auto;
+    margin-top:1em;
+    margin-bottom: 1em;
+    border-radius: 15px;
+    h2{
+        margin:0em;
+        font-weight: bold;
+    }
+    .topfive{
+        display: flex;
+        // justify-content: center;
+
+        text-align: left;
+        margin-bottom: .2em;
+        padding:.2em;
+        background-color: rgba(0, 0, 0, 0.2);
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        img{
+            width: 50px;
+            height:50px;
+            object-fit: cover;
+            border-radius: 100%;
+            margin-right:1em;
+        }
+        .top-container{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+}

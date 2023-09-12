@@ -1,0 +1,28 @@
+.recent-toggle{
+    a{
+        text-decoration: none;
+    }
+
+    p{
+        color: white;
+        margin:0em;
+        padding-left: .5em;
+    }
+    .link-container{
+        display: flex;
+        align-items: center;
+    }
+
+}
+h2{
+    margin:.5em;
+    text-align: center;
+    color: white;
+}
+.recent-container{
+    margin:auto;
+    width:80%;
+    // border: 5px solid black;
+    padding:1em;
+    background: rgba(0, 0, 0, 0.5);
+}
